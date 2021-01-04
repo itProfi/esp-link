@@ -1,3 +1,4 @@
+esptool --port COM3 --baud 115200 write_flash --flash_freq 80m --flash_mode qio --flash_size 4MB 0x0000 boot_v1.5.bin 0x1000 user1.bin 0x3FE000 blank.bin
 ESP-LINK: Wifi-Serial Bridge w/REST&MQTT
 ========================================
 
