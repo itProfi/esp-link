@@ -1,4 +1,3 @@
-esptool --port COM3 --baud 115200 write_flash --flash_freq 80m --flash_mode qio --flash_size 4MB 0x0000 boot_v1.5.bin 0x1000 user1.bin 0x3FE000 blank.bin
 ESP-LINK: Wifi-Serial Bridge w/REST&MQTT
 ========================================
 
@@ -7,6 +6,7 @@ ESP-LINK: Wifi-Serial Bridge w/REST&MQTT
 The esp-link firmware connects a micro-controller to the internet using an ESP8266 Wifi module.
 It implements a number of features:
 
+-esptool --port COM3 --baud 115200 write_flash --flash_freq 80m --flash_mode qio --flash_size 4MB 0x0000 boot_v1.5.bin 0x1000 user1.bin 0x3FE000 blank.bin
 - transparent bridge between Wifi and serial, useful for debugging or inputting into a uC
 - flash-programming attached Arduino/AVR microcontrollers and
   LPC800-series and other ARM microcontrollers via Wifi
